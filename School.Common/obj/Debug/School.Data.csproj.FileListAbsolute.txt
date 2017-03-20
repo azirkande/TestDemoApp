@@ -1,0 +1,12 @@
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\School.Data.dll.config
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\School.Data.dll
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\School.Data.pdb
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\Autofac.dll
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\EntityFramework.dll
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\Autofac.xml
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\EntityFramework.xml
+C:\Folio1-Test-App\School.Web\School.Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Folio1-Test-App\School.Web\School.Common\obj\Debug\School.Data.csprojResolveAssemblyReference.cache
+C:\Folio1-Test-App\School.Web\School.Common\obj\Debug\School.Data.dll
+C:\Folio1-Test-App\School.Web\School.Common\obj\Debug\School.Data.pdb

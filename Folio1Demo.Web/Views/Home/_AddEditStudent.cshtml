@@ -1,0 +1,27 @@
+﻿
+<div class="popup-dimension">
+
+    <h2 data-bind="visible: isEdit()"> Edit Student</h2>
+    <h2 data-bind="visible: !isEdit()"> Add  Student</h2>
+    <div class="popup-fields">
+        <div>
+            <label data-bind="text: Id, visible: false"></label>
+        </div>
+        <div>
+            <p>First Name: <input data-bind="value: FirstName" maxlength="255" /></p>
+        </div>
+        <div>
+            <p>Last Name: <input data-bind="value: LastName" maxlength="255" /></p>
+        </div>
+        <div>
+            <p>Age: <input data-bind="value: Age" type="number" maxlength="3" /></p>
+        </div>
+        <div>
+            <p>GPA: <input data-bind="value: Gpa" type="number" maxlength="2" /></p>
+        </div>
+        <div>
+            <button data-bind="click: saveStudent">Save</button>
+            <button data-dismiss="modal" data-bind="click: cancel">Cancel</button>
+        </div>
+    </div>
+</div>

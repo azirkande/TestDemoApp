@@ -1,0 +1,25 @@
+﻿
+<div class="popup-dimension">
+
+    <h2 data-bind="visible: isEdit()"> Edit Class</h2>
+    <h2 data-bind="visible: !isEdit()"> Add  Class</h2>
+    <div class="popup-fields">
+        <div>
+            <label data-bind="text: classId, visible: false"></label>
+        </div>
+        <div>
+            <p>Name: <input data-bind="value: className" maxlength="255" /></p>
+        </div>
+        <div>
+            <p>Teacher: <input data-bind="value: classTeacher" maxlength="255" /></p>
+        </div>
+        <div>
+            <p>Location: <input data-bind="value: classLocation" maxlength="255" /></p>
+        </div>
+        <div>
+            <button data-bind="click: saveClass">Save</button>
+            <button data-dismiss="modal" data-bind="click:cancel">Cancel</button>
+        </div>
+    </div>
+</div>
+

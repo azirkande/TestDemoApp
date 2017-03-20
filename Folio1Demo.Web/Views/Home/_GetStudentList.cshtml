@@ -1,0 +1,35 @@
+﻿
+
+<div data-bind="visible: students().length > 0">
+    <table class="table table-striped table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>GPA</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody data-bind="foreach: students">
+            <tr>
+                <td>
+                    <span data-bind="text: FullName"></span>
+                    <span data-bind="css:{ 'glyphicon glyphicon-star' :  $parent.isBrightStudent(Gpa) }"></span>
+                </td>
+                <td data-bind="text: Age"></td>
+                <td data-bind="text: Gpa"></td>
+                <td><input type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#studentModal" value="edit " data-bind="click: $parent.editStudent" /></td>
+                <td><input type="button" class="btn btn-danger btn-xs" value="delete " data-bind="click: $parent.removeStudent" /></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div data-bind="visible:  students().length == 0">
+    No students in the class.
+</div>
+
+<br />
+<input type="button" class="btn btn-default" data-toggle="modal" data-target="#studentModal" value="Add" data-bind="click: addStudent" />

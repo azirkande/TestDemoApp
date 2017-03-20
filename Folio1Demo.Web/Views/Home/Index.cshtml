@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Folio1 School Demo</h2>
+
+<div class="panel-body" data-bind="with: classListViewModel">
+    <h3>Classes</h3>
+    <hr />
+    @Html.Partial("_GetClassList")
+</div>
+
+<div class="modal fade " id="classModal" role="dialog">
+    <div class="panel-body" data-bind="with: classListViewModel">
+        @Html.Partial("_AddEditClass")
+    </div>
+
+</div>
+
+<hr />
+<div data-bind="visible: studentListViewModel.ClassId()> 0">
+    <h3 data-bind="text: studentListViewModel.selectedClass() ? studentListViewModel.selectedClass().Name : '' "></h3>
+</div>
+<hr />
+<div class="panel-body" data-bind="with: studentListViewModel">
+    <div data-bind="visible: ClassId() > 0">
+
+        @Html.Partial("_GetStudentList")
+    </div>
+</div>
+
+<div class="modal fade " id="studentModal" role="dialog">
+    <div class="panel-body" data-bind="with: studentListViewModel">
+
+        @Html.Partial("_AddEditStudent")
+
+    </div>
+
+</div>
+
